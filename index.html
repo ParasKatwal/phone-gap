@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="log-wrapper">
+            <div class="hpanel show_login" id="login_panel">
+                <div class="panel-body">
+                    <div class="inner">
+                        <div class="row form_titles">
+                            <div class="col-sm-12">
+                                <div
+                                    id="forgot_form_title"
+                                    class="form_title text-center col-4"
+                                >
+                                    <h1>Forgot Password</h1>
+                                </div>
+                                <div
+                                    id="login_form_title"
+                                    class="form_title text-center col-4"
+                                >
+                                    <h1>LOG IN</h1>
+                                </div>
+                                <div
+                                    id="signup_form_title"
+                                    class="form_title text-center col-4"
+                                >
+                                    <h1>SIGN UP</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <form action="#" id="forgotForm" class="col-4">
+                                    <div class="form-group">
+                                        <label class="control-label"
+                                            >Email:
+                                        </label>
+                                        <input
+                                            id="forgot_email"
+                                            type="email"
+                                            placeholder="example@gmail.com"
+                                            title="Please enter you email address"
+                                            value=""
+                                            name="username"
+                                            class="form-control"
+                                        />
+                                        <span
+                                            class="help-block small invalid_text hidden"
+                                            >* Please enter a valid email
+                                            address.</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label"
+                                            >Username:
+                                        </label>
+                                        <input
+                                            id="forgot_username"
+                                            type="username"
+                                            placeholder="Username"
+                                            title="Please enter you username"
+                                            value=""
+                                            name="username"
+                                            class="form-control"
+                                        />
+                                        <span
+                                            class="help-block small invalid_text hidden"
+                                            >* Please enter your username.</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <button
+                                            class="log-btn btn btn-block commit_forgot"
+                                            type="button"
+                                        >
+                                            Send Recovery Email
+                                        </button>
+                                    </div>
+                                    <p>
+                                        <a
+                                            class="toggle_login nevermind-link show_login_panel"
+                                            >Nevermind -></a
+                                        >
+                                    </p>
+                                </form>
+                                <form action="#" id="loginForm" class="col-4">
+                                    <div class="form-group">
+                                        <div class="display-flex">
+                                            <label
+                                                class="control-label flex-grow"
+                                                >Username:
+                                            </label>
+                                        </div>
+                                        <input
+                                            id="login_username"
+                                            type="username"
+                                            placeholder="Username"
+                                            title="Please enter you username"
+                                            value=""
+                                            name="username"
+                                            class="form-control"
+                                        />
+                                        <span
+                                            class="help-block small invalid_text hidden"
+                                            >* Please enter your username.</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="display-flex">
+                                            <label
+                                                class="control-label flex-grow"
+                                                for="password"
+                                                >Password:
+                                            </label>
+                                            <a
+                                                class="toggle_login forgot-link show_forgot_panel"
+                                                >Forgot Password?</a
+                                            >
+                                        </div>
+                                        <input
+                                            id="login_password"
+                                            type="password"
+                                            title="Please enter your password"
+                                            placeholder="******"
+                                            value=""
+                                            name="password"
+                                            class="form-control"
+                                            minlength="8"
+                                        />
+                                        <span
+                                            class="help-block small invalid_text hidden"
+                                            style="color: red;"
+                                            >* Your password must be at least 8
+                                            characters as well as contain at
+                                            least one uppercase, one lowercase,
+                                            and one number.</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <button
+                                            class="log-btn btn btn-block commit_login"
+                                            type="button"
+                                        >
+                                            Login
+                                        </button>
+                                    </div>
+                                    <p class="text-center">
+                                        Don't have an account?
+                                        <a
+                                            class="link-white toggle_login show_signup_panel"
+                                            >Sign up</a
+                                        >
+                                    </p>
+                                </form>
+                                <form action="#" id="signupForm" class="col-4">
+                                    <div class="form-group">
+                                        <label class="control-label"
+                                            >Email:
+                                        </label>
+                                        <input
+                                            id="signup_email"
+                                            type="email"
+                                            placeholder="example@gmail.com"
+                                            title="Please enter you email address"
+                                            value=""
+                                            name="username"
+                                            class="form-control"
+                                        />
+                                        <span
+                                            class="help-block small invalid_text hidden"
+                                            >* Please enter a valid email
+                                            address.</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label"
+                                            >Username:
+                                        </label>
+                                        <input
+                                            id="signup_username"
+                                            type="username"
+                                            placeholder="Username"
+                                            title="Please enter you username"
+                                            value=""
+                                            name="username"
+                                            class="form-control"
+                                        />
+                                        <span
+                                            class="help-block small invalid_text hidden"
+                                            >* Please enter your username.</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label
+                                            class="control-label"
+                                            for="password"
+                                            >Password:
+                                        </label>
+                                        <input
+                                            id="signup_password"
+                                            type="password"
+                                            title="Please enter your password"
+                                            placeholder="******"
+                                            value=""
+                                            name="password"
+                                            class="form-control"
+                                            minlength="8"
+                                        />
+                                        <span
+                                            class="help-block small invalid_text hidden"
+                                            style="color: red;"
+                                            >* Your password must be at least 8
+                                            characters as well as contain at
+                                            least one uppercase, one lowercase,
+                                            and one number.</span
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <button
+                                            class="log-btn btn btn-block commit_signup"
+                                            type="button"
+                                        >
+                                            Sign Up
+                                        </button>
+                                    </div>
+                                    <p class="text-center">
+                                        Already have an account?
+                                        <a
+                                            class="link-white toggle_login show_login_panel"
+                                            >Login</a
+                                        >
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+        <script src="app.js"></script>
+    </body>
+</html>
